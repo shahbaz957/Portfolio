@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies - Shahbaz Baig</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        };
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+    
+    <!-- Navbar -->
+    <nav class="bg-black dark:bg-gray-800 text-white py-3 px-6 fixed w-full top-0 z-50 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-orange-500 hover:text-white transition">Shahbaz Baig</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <div class="md:hidden flex items-center">
+            <button id="menuToggle" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-orange-500 dark:hover:text-yellow-400">Portfolio</a>
+            <a href="projects.html" class="hover:text-orange-500 dark:hover:text-yellow-400">Projects</a>
+            <a href="technologies.html" class="text-orange-500 font-semibold">Technologies</a>
+            <a href="resume.html" class="hover:text-orange-500 dark:hover:text-yellow-400">Resume</a>
+            <a href="education.html" class="hover:text-orange-500 dark:hover:text-yellow-400">Education</a>
+        </div>
+
+        <!-- Desktop Button -->
+        <div class="flex space-x-2">
+            <a href="contact.html" class="bg-orange-500 text-white px-3 md:px-4 py-1 md:py-2 rounded-md text-xs md:text-sm hover:bg-orange-600 transition">
+                Contact Me
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="navMenu" class="hidden md:hidden bg-black dark:bg-gray-800 text-white fixed top-0 left-0 w-full h-full bg-opacity-80 z-40">
+        <div class="flex justify-end p-4">
+            <button id="closeMenu" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center space-y-6 mt-12">
+            <a href="index.html" class="hover:text-orange-500 dark:hover:text-yellow-400">Portfolio</a>
+            <a href="projects.html" class="hover:text-orange-500 dark:hover:text-yellow-400">Projects</a>
+            <a href="technologies.html" class="text-orange-500 font-semibold">Technologies</a>
+            <a href="resume.html" class="hover:text-orange-500 dark:hover:text-yellow-400">Resume</a>
+            <a href="education.html" class="hover:text-orange-500 dark:hover:text-yellow-400">Education</a>
+            <a href="index.html#contact" class="bg-orange-500 text-white px-3 py-2 rounded-md text-xs md:text-sm hover:bg-orange-600 transition">
+                Contact Me
+            </a>
+        </div>
+    </div>
+    
+    <!-- Technologies Section -->
+    <section class="pt-20 px-6">
+        <h1 class="text-4xl font-bold text-center text-orange-500 mb-8">Technologies I Work With</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <div class="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mb-4"><img src="python.png" alt="python"></div>
+                <h3 class="text-xl font-semibold">Python</h3>
+                <p class="text-gray-600 dark:text-gray-300">Experienced in Python for AI & ML development.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <div class="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mb-4"><img src="ML.png" alt="Machine"></div>
+                <h3 class="text-xl font-semibold">Machine Learning</h3>
+                <p class="text-gray-600 dark:text-gray-300">Proficient in building ML models with TensorFlow & Scikit-Learn.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <div class="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mb-4"><img src="ds.jpg" alt="data"></div>
+                <h3 class="text-xl font-semibold">Data Science</h3>
+                <p class="text-gray-600 dark:text-gray-300">Strong background in data visualization and analytics.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <div class="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mb-4"><img src="web.png" alt="web"></div>
+                <h3 class="text-xl font-semibold">Web Development</h3>
+                <p class="text-gray-600 dark:text-gray-300">Building dynamic web apps with Flask & SQLite. <br>Hands on Experience on HTML and CSS</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="pt-20 px-6">
+        <h1 class="text-4xl font-bold text-center text-orange-500 mb-8">Frameworks and Languages I Work With</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <div class="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mb-4"><img src="python.png" alt="python"></div>
+                <h3 class="text-xl font-semibold">Python</h3>
+                <p class="text-gray-600 dark:text-gray-300">Experienced in Python for AI & ML development.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <div class="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mb-4"><img src="ML.png" alt="Machine"></div>
+                <h3 class="text-xl font-semibold">Machine Learning</h3>
+                <p class="text-gray-600 dark:text-gray-300">Proficient in building ML models with TensorFlow & Scikit-Learn.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <div class="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mb-4"><img src="ds.jpg" alt="data"></div>
+                <h3 class="text-xl font-semibold">Data Science</h3>
+                <p class="text-gray-600 dark:text-gray-300">Strong background in data visualization and analytics.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <div class="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mb-4"><img src="web.png" alt="web"></div>
+                <h3 class="text-xl font-semibold">Web Development</h3>
+                <p class="text-gray-600 dark:text-gray-300">Building dynamic web apps with Flask & SQLite.</p>
+            </div>
+        </div>
+    </section> -->
+    <section class="pt-20 px-6">
+        <h1 class="text-4xl font-bold text-center text-orange-500 mb-8">Languages and Framworks I Work With</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Template for one technology -->
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="C.svg" alt="C">
+                <h3 class="text-xl font-semibold">C/C++</h3>
+                <p class="text-gray-600 dark:text-gray-300">Experienced in C/C++ for Dynamic Programming and Solved 50+ Leetcode Problems.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="panda.png" alt="Panda">
+                <h3 class="text-xl font-semibold">Pandas</h3>
+                <p class="text-gray-600 dark:text-gray-300">Proficient in Analyzing data , Feature Engineering and Preprocess it Before training the model <br>Link of Github Repo Containing Notebooks of Feature Engineering</p>
+                <a href="https://github.com/shahbaz957/Feature_Engineering" style="color: red;font-weight: bolder;font-size:large ;">Link</a>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="sklearn.png" alt="Scikit">
+                <h3 class="text-xl font-semibold">Scikit-Learn</h3>
+                <p class="text-gray-600 dark:text-gray-300">Used it for Preprocessing data , creating pipelines and Model training</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="Numpy.png" alt="Web Development">
+                <h3 class="text-xl font-semibold">Numpy</h3>
+                <p class="text-gray-600 dark:text-gray-300">Proficient in Numpy for numerical Computing and creating and manipulate multidimensional arrays</p>
+            </div>
+
+            <!-- New Technology Block Example -->
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="tf.jpg" alt="TensorFlow">
+                <h3 class="text-xl font-semibold">TensorFlow</h3>
+                <p class="text-gray-600 dark:text-gray-300">Used for building complex deep learning models and multilayer Neural Networks</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="flask.png" alt="Flask">
+                <h3 class="text-xl font-semibold">Flask</h3>
+                <p class="text-gray-600 dark:text-gray-300">Building lightweight web applications with Flask and for the deployment of ML Models</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="sql.jpg" alt="SQL">
+                <h3 class="text-xl font-semibold">SQLite-3</h3>
+                <p class="text-gray-600 dark:text-gray-300">Proficient in SQLite-3 for database management and optimization.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="matplot.png" alt="Matplotlib">
+                <h3 class="text-xl font-semibold">Matplotlib</h3>
+                <p class="text-gray-600 dark:text-gray-300">Efficient in using pyplot to visualize data , custom plotting and drawing insights from it</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center tech-box">
+                <img src="seaborn.webp" alt="Seaborn">
+                <h3 class="text-xl font-semibold">Seaborn</h3>
+                <p class="text-gray-600 dark:text-gray-300">Proficient in creating a wide range of plots such as box plots, violin plots, scatter plots, pair plots, heatmaps, and dist plots to explore data and uncover hidden patterns.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black dark:bg-gray-800 text-white py-4 text-center mt-8">
+        <p>&copy; <span id="year"></span> Shahbaz Baig | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Toggle -->
+    <script>
+        // Toggle Menu
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
+        const closeMenu = document.getElementById("closeMenu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.remove("hidden");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            navMenu.classList.add("hidden");
+        });
+
+        // Dynamic year update in footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

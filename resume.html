@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Shahbaz Baig</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+    <!-- Navbar -->
+    <nav class="bg-black dark:bg-gray-800 text-white py-2 px-6 fixed w-full top-0 z-50 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold text-orange-500 hover:text-white transition">Shahbaz Baig</a>
+        <!-- Mobile Menu Button -->
+        <button id="menuToggle" class="md:hidden text-white text-xl"> ☰ </button>
+        <!-- Navbar Links -->
+        <div id="navMenu" class="hidden md:flex space-x-8 absolute md:static bg-black md:bg-transparent w-full md:w-auto left-0 top-12 md:top-0 py-3 md:py-0 px-4 md:px-0">
+            <a href="index.html" class="block md:inline hover:text-orange-500">Portfolio</a>
+            <a href="projects.html" class="block md:inline hover:text-orange-500">Projects</a>
+            <a href="technologies.html" class="block md:inline hover:text-orange-500">Technologies</a>
+            <a href="resume.html" class="block md:inline hover:text-orange-500 text-orange-500 font-bold">Resume</a>
+            <a href="education.html" class="block md:inline hover:text-orange-500">Education</a>
+        </div>
+        <!-- Contact Button -->
+        <div class="flex space-x-2">
+            <a href="contact.html" class="bg-orange-500 text-white px-3 md:px-4 py-1 md:py-2 rounded-md text-xs md:text-sm hover:bg-orange-600 transition">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Resume Section -->
+    <section class="pt-20 px-6 md:px-20">
+        <h1 class="text-4xl font-bold text-center text-orange-500 mb-10">My Resume</h1>
+        
+        <!-- Resume Container -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+            <div class="flex justify-center items-center mb-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-semibold mb-2">Download My Resume</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Click the button below to download my resume in PDF format.</p>
+                    <!-- PDF Resume Placeholder -->
+                    <a href="Mirza_Shahbaz_Ali_Baig.pdf" target="_blank" class="bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600 transition">Download Resume</a>
+                </div>
+            </div>
+
+            <!-- Embed PDF in Viewer (Optional) -->
+            <div class="w-full">
+                <embed src="Mirza_Shahbaz_Ali_Baig.pdf" type="application/pdf" class="w-full h-96 border-2 border-gray-200 rounded-lg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black dark:bg-gray-800 text-white py-4 text-center mt-10">
+        <p>&copy; <span id="year"></span> Shahbaz Baig | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navMenu = document.getElementById("navMenu");
+
+            if (menuToggle) {
+                menuToggle.addEventListener("click", function () {
+                    navMenu.classList.toggle("hidden");
+                });
+            }
+
+            // Dynamic year update in footer
+            document.getElementById("year").textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+
+</html>

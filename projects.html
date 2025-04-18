@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Shahbaz Baig</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+    <!-- Navbar -->
+    <nav class="bg-black dark:bg-gray-800 text-white py-2 px-6 fixed w-full top-0 z-50 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold text-orange-500 hover:text-white transition">Shahbaz Baig</a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuToggle" class="md:hidden text-white text-xl">
+            ☰
+        </button>
+
+        <!-- Navbar Links -->
+        <div id="navMenu" class="hidden md:flex space-x-8 absolute md:static bg-black md:bg-transparent w-full md:w-auto left-0 top-12 md:top-0 py-3 md:py-0 px-4 md:px-0">
+            <a href="index.html" class="block md:inline hover:text-orange-500">Portfolio</a>
+            <a href="projects.html" class="block md:inline hover:text-orange-500 text-orange-500 font-bold">Projects</a>
+            <a href="technologies.html" class="block md:inline hover:text-orange-500">Technologies</a>
+            <a href="resume.html" class="block md:inline hover:text-orange-500">Resume</a>
+            <a href="education.html" class="block md:inline hover:text-orange-500">Education</a>
+        </div>
+
+        <!-- Contact Button -->
+        <div class="flex space-x-2">
+            <a href="contact.html" class="bg-orange-500 text-white px-3 md:px-4 py-1 md:py-2 rounded-md text-xs md:text-sm hover:bg-orange-600 transition">
+                Contact Me
+            </a>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="pt-20 px-6 md:px-20">
+        <h1 class="text-4xl font-bold text-center text-orange-500 mb-10">My Projects</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="todo.webp" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
+                <h1 class="text-xl font-semibold mt-4 text-black">Flask Based Todo App</h1>
+                <p class="mt-2 text-black">Efficient Flask Based todo app which has functionalities like Create , Delete , Check Status and Delete the Task</p>
+                <a href="https://github.com/shahbaz957/To-do-App" class="text-orange-500 font-bold mt-2 block">View Project</a>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="movie_img.png" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4 text-black">Movie Recommendation System</h2>
+                <p class="mt-2 text-black">This is content based movie recommender system in which i use cosine similarity distance and vectorization technique to figure out the closely related movies based on their genres , cast and directors and also apply Dimensionality reduction technique for Best performance of Model</p>
+                <a href="https://github.com/shahbaz957/Movie_recommender_system" class="text-orange-500 font-bold mt-2 block">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="eda.webp" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4 text-black">Exploratory Data Analysis</h2>
+                <p class="mt-2 text-black">Analyze the world Population Dataset and explore the insights and relarion different variables of dataset </p>
+                <a href="https://github.com/shahbaz957/EDA_on_world_population_dataset" class="text-orange-500 font-bold mt-2 block">View Project</a>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="clean.webp" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4 text-black">Data Cleaning</h2>
+                <p class="mt-2 text-black">I cleaned Customer Call data using different techniques in pandas and Numpy. <br>
+                Make the proper fomat of numbers and addresses in different columns</p>
+                <a href="https://github.com/shahbaz957/Data_cleaning" class="text-orange-500 font-bold mt-2 block">View Project</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="lreg.png" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4 text-black">House Price Prediction</h2>
+                <p class="mt-2 text-black"><strong>Linear Regression Model</strong>
+
+                    This project demonstrates the use of a Linear Regression model to predict a continuous target variable based on one or more predictor variables. The model leverages the scikit-learn library for training and evaluating the performance of the regression algorithm.
+                    <br>
+                    <b>Approach:</b>
+                    Data Preprocessing: The data was cleaned and prepared for model training by handling missing values, scaling features, and encoding categorical variables.
+                    <br>
+                    <b>Model Training:</b>
+                     The linear regression model was trained on the dataset using the Ordinary Least Squares (OLS) method, which minimizes the sum of squared differences between the predicted and actual values.
+                    <br>
+                    <b>Evaluation:</b> Model performance was evaluated using common metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²) score to assess how well the model can predict unseen data.
+                    <br>
+                    <b>Technologies Used:</b>
+                        Python: Main programming language
+                        <br>
+                    <b>Libraries:</b> 
+                        scikit-learn, Pandas, NumPy, Matplotlib
+                        <br>
+                    <b>Tools:</b>
+                        Jupyter Notebook
+                </p>
+                <a href="https://github.com/shahbaz957/Different_Regression_Models_on_housing_Dataset" class="text-orange-500 font-bold mt-2 block">View Project</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="classification.png" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4 text-black">Classification Model</h2>
+                <p class="mt-2 text-black"><b>Titanic Survival Prediction (Logistic Regression Model)</b>
+                    <br>
+                    This project demonstrates the use of a Classification model to predict whether a passenger survived or not on the Titanic, based on various features such as age, sex, class, and other passenger attributes. The model leverages the scikit-learn library for building and evaluating the classification algorithm.
+                    <br>
+                    <b>Objective:</b>
+                    <br>
+                    The goal of this project is to predict the survival of passengers on the Titanic based on the dataset available from the Kaggle Titanic competition. The challenge focuses on classifying passengers into two classes: Survived (1) or Did Not Survive (0).
+                    <br>
+                    <b>Approach:</b>
+                    <br>
+                    Data Preprocessing: The Titanic dataset was cleaned and preprocessed to handle missing values, encode categorical variables (e.g., "Sex," "Embarked"), and scale numerical features. The training and testing datasets were split for validation purposes..
+                    <br>
+                    <b>Model Training:</b>
+                    <br> The model was trained on the features of the passengers, such as Age, Sex, Pclass, SibSp, Fare, and others.
+                    <br>
+                    <b>Evaluation:</b>
+                    <br>
+                    Model performance was evaluated using metrics such as Accuracy, Precision Score.</p>
+                <a href="https://github.com/shahbaz957/Logistic_Regression_model" class="text-orange-500 font-bold mt-2 block">View Project</a>
+            </div>
+
+
+
+            <!-- Project 6 -->
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="diff_cl.png" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4 text-black">Using Different Classification Models</h2>
+                <p class="mt-2 text-black">In this Task I Used different classification models on titanic dataset like Gradient Boosting , Decision Tree Classifier , logistic Regression and Random Forest Classifier <br>
+                <b>Most highest accuracy is of Gradient Boosting Algorithm</b></p>
+                <a href="https://github.com/shahbaz957/using_different_classification_model" class="text-orange-500 font-bold mt-2 block">View Project</a>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="lms.jpg" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4 text-black">Library Management System</h2>
+                <p class="mt-2 text-black">This is the full fledge LMS including the options to add issue books add the user names and also mechanism of returning book and updating the database accordingly all the activities are recorded in transaction file using python File I/O system</p>
+                <a href="https://github.com/shahbaz957/Library_Management_System" class="text-orange-500 font-bold mt-2 block">View Project</a>
+            </div>
+
+            <!-- Project 8 -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black dark:bg-gray-800 text-white py-4 text-center mt-10">
+        <p>&copy; <span id="year"></span> Shahbaz Baig | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const navMenu = document.getElementById("navMenu");
+
+            if (menuToggle) {
+                menuToggle.addEventListener("click", function () {
+                    navMenu.classList.toggle("hidden");
+                });
+            }
+
+            // Dynamic year update in footer
+            document.getElementById("year").textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+
+</html>
